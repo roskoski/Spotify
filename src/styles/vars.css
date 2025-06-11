@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap');
+
+:root {
+    --font-dm-sans: 'DM Sans', sans-serif;
+    --font-color-grey: #b3b3b3;
+    --bgc-black: #121212;
+    --bgc-header-search: #242424;
+    --bg-icon: #131313;
+    --bg-arrow-color: #000007;
+    --bgc-play: #1db954;
+    --gradient-footer-1: #af2896;
+    --gradient-footer-2: #509bf5;
+    --white: #ffffff;
+    --black: #000000;
+    /* CARDS */
+    --text-base-dark: #000;
+    --text-base-light: #fff;
+    --text-sub: #a7a7a7;
+    --card1: rgb(0, 100, 80);
+    --card2: rgb(132, 0, 231);
+    --card3: rgb(30, 50, 100);
+    --card4: rgb(140, 25, 50);
+    --card5: rgb(232, 17, 91);
+    --card6: rgb(83, 122, 161);
+    --card7: rgb(142, 102, 172);
+    --card8: rgb(20, 138, 8);
+    --card9: rgb(30, 50, 100);
+    --card10: rgb(233, 20, 41);
+    --card11: rgb(80, 55, 80);
+    --card12: rgb(216, 64, 0);
+    --card13: rgb(186, 93, 7);
+    --card14: rgb(0, 30, 80);
+    --card15: rgb(60, 30, 80);
+}

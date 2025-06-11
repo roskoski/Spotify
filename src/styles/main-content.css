@@ -1,0 +1,324 @@
+.main-container {
+    max-width: 80vw;
+    height: 100vh;
+    margin-left: 32rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.header__navigation {
+    background-color: var(--bgc-black);
+    padding: 1.6rem;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__navigation .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.25rem;
+}
+
+.arrow-left, .arrow-right {
+    width: 3.3rem;
+    height: 3.2rem;
+    background: var(--bg-icon);
+    background-color: var(--bg-arrow-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.header__search {
+    width: 36.4rem;
+    height: 4.8rem;
+    background-color: var(--bgc-header-search);
+    border-radius: 50rem;
+    border: 0.1rem solid transparent;
+    display: flex;
+    align-items: center;
+}
+
+.header__search span {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-left: 1rem;
+}
+
+.header__search input {
+    background: transparent;
+    padding: 0rem 10rem 0 1.2rem;
+    color: var(--white);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border: none;
+    white-space: nowrap;
+    outline: none;
+}
+
+#search-input {
+  font-size: 1.6rem;
+  min-width: 60%;
+}
+
+.header__login {
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header__login .subscribe-button {
+    color: var(--text-sub);
+    background: transparent;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.header__login .subscribe-button:hover {
+    color: var(--white);
+}
+
+.header__login .login-button {
+    font-size: inherit;
+    font-weight: inherit; 
+    border-radius: 4rem;
+    padding: 1.2rem 2.3rem; 
+}
+
+.playlist-container {
+    height:680vh;
+    padding-top: 1.6rem;
+    border-radius: 1rem;
+    background-color: #121212;
+  }
+  
+  .playlist {
+    margin: 1rem 2.4rem;
+  }
+  
+  .playlist #greeting {
+    color: var(--text-base-light);
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+  }
+  
+  .playlist .session {
+    color: var(--text-base-light);
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+  
+  .offer__scroll-container {
+    max-height: 49vh;
+    margin: 2.4rem;
+    overflow-y: auto;
+  }
+  
+  .offer__scroll-container::-webkit-scrollbar {
+    width: 0.1rem;
+  }
+  
+  .offer__scroll-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  
+  .offer__list-item {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.6rem;
+    gap: 1.6rem;
+    margin-bottom: 1.6rem;
+  }
+  
+  .cards {
+    position: relative; 
+    width: 22rem;
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 0.8rem;
+  }
+  
+  .cards span {
+    padding: 1.6rem;
+    position: absolute;
+    color: var(--text-base-light);
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  /* COLOR CARDS */
+  .card1 {
+    background-color: var(--card1);
+  }
+  .card2 {
+    background-color: var(--card2);
+  }
+  .card3 {
+    background: var(--card3);
+  }
+  .card4 {
+    background: var(--card4);
+  }
+  .card5 {
+    background: var(--card5);
+  }
+  .card6 {
+    background: var(--card6);
+  }
+  .card7 {
+    background: var(--card7);
+  }
+  .card8 {
+    background: var(--card8);
+  }
+  .card9 {
+    background: var(--card9);
+  }
+  .card10 {
+    background: var(--card10);
+  }
+  .card11 {
+    background: var(--card11);
+  }
+  .card12 {
+    background: var(--card12);
+  }
+  .card13 {
+    background: var(--card13);
+  }
+  .card14 {
+    background: var(--card14);
+  }
+  .card15 {
+    background: var(--card15);
+  }
+
+  .offer__list-item img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 10.7rem;
+    transform: rotate(25deg) translate(18%, -2%);
+  }
+  
+  /* CARD ARTISTA */
+  
+  .artist {
+    --column-count: 5;
+    --grid-gap: 2.4rem;
+    --min-container-width: 37.2rem;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .grid-container {
+    grid-gap: var(--grid-gap);
+    display: grid;
+    grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
+    min-width: var(--min-container-width);
+  }
+  
+  .artist-card {
+    background: #181818;
+    border-radius: 0.8rem;
+    -ms-flex: 1;
+    flex: 1;
+    isolation: isolate;
+    padding: 1.6rem;
+    position: relative;
+    transition: background-color 0.3s ease;
+    width: 20%;
+  }
+  
+  .artist-card:hover {
+    background-color: #252525;
+  }
+  
+  .card-img {
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.6rem;
+  }
+  
+  .artist-img {
+    height: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 0;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+  
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-height: 6.2rem;
+  }
+  
+  .card-text a {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  .artist-name {
+    box-sizing: border-box;
+    margin-block: 0rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding-block-end: 0.8rem;
+  }
+  
+  .artist-categorie {
+    color: #6a6a6a;
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+  
+  .play {
+    position: relative;
+  }
+  
+  .play .fa-play {
+    position: absolute;
+    right: 1rem;
+    top: 12rem;
+    padding: 1.8rem;
+    background-color: var(--bgc-play);
+    border-radius: 100%;
+    font-size: 1.4rem;
+    opacity: 0;
+    transition: all ease 0.4s;
+  }
+  
+  .artist-card:hover .play .fa-play {
+    opacity: 1;
+    transform: translateY(-2rem);
+  }
+  
+  .play .fa-play:hover {
+    padding: 2rem;
+    cursor: pointer;
+  }
+  
+  #result-artist {
+    padding: 2rem 4rem;
+  }
